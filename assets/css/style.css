@@ -1,0 +1,729 @@
+
+*{
+	box-sizing: border-box;
+}
+body {
+	background-image: url("../images/background.png");
+	margin: 0 auto;
+	text-decoration: none;
+	color: #cccccc;
+	list-style-type: none;
+}
+li {
+    display: inline-block;
+    color: #777777;
+    text-align: center;  
+}
+a {
+	text-decoration: none;
+	color: #cccccc;
+}
+p {
+	padding-bottom: 5px;
+}
+.bold {
+    font-weight: bold;
+}
+.clearfix::after {
+   content: " ";
+   display: block;
+   clear: both;
+}
+.arial {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+.georgia {
+	font-family: 'Georgia', 'Times', "Times New Roman", serif;
+	font-weight: bold;
+}
+/*styling the top bar*/
+#top {
+	width: 100%;
+	text-align: center;
+	border-bottom-color: #cccccc;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	background-color: #ffffff;
+	padding: 0px;
+	margin: 0 auto;
+	overflow: hidden;
+	z-index: 100	
+}
+#myname {
+	background: #4aaaa5;	
+	color: #ffffff;
+    border-bottom-color: #cccccc;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+.name {
+	font-size: 24.5px;
+}
+/*stying the navigation bar*/
+#navigation {
+    background-color: #ffffff;
+	color: #777777;
+	z-index: 200;
+
+}
+.nav1 {
+    background-color: #ffffff;
+	float:left;
+	font-size: 14px;
+}
+.nav2 {
+    background-color: #ffffff;
+	border-left: 1px solid #cccccc;
+	float:left;	
+	font-size: 14px;
+}
+#navlist {
+	float:left;
+}	
+/*styling the main area of the about page*/
+#center {
+    margin: 0 auto;
+	
+}
+/*styling the about me area*/
+#main {
+	background-color: #ffffff;
+    color: #777777;
+    border-color: #cccccc;
+    border-width: 1px;
+    border-style: solid;
+}
+#mainheader {
+    background-color: #ffffff;
+	color: #4aaaa5;
+	text-align: center;
+	font-size: 22px;
+	font-size: 2em;
+	text-align: left;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #cccccc;
+}
+#profile {
+	background-color: #ffffff;
+	color: #444444;
+}
+.profiletextbox {
+    text-align: left;
+	font-size: 18px;
+	line-height: 27px
+}
+
+.profiletext {
+	text-align: justify;
+	font-size: 14px;
+}
+/*formatting the contact page*/
+.contact {
+	background: #ffffff;
+	color: #4aaaa5;
+    border-width: 1px;
+	border-color: #cccccc;
+	border-style: solid;
+}
+.contactheader {
+	padding: 26px;
+	width: 580px;
+
+}
+.contacttext {
+	text-align: left;
+	color: #666666;
+	font-size: 14px;
+	padding: 6px 0px 6px 0px;
+}
+.contactbox {
+	padding:26px;
+}
+input {
+	width: 100%;
+}
+textarea {
+	width: 100%;
+    height: 240px;
+    resize: none;
+}
+.submitbutton {
+	width: 100px;
+	height: 40px;
+	background: #4aaaa5;
+	color: #ffffff;
+	border: none;
+	margin-top: 26px;
+	}
+/*styling the main area of the portfolio page*/
+.portfoliomain {
+	background: #ffffff;
+	color: #4aaaa5;
+	border-width: 1px;
+	border-color: #cccccc;
+	border-style: solid;
+}
+.portfolio-list {
+	margin-top:40px;
+}
+
+.listtext {
+	background: #4aaaa5;
+	text-align: center;
+	margin-left: 51px;
+	color: #ffffff;
+}
+
+/*Styling the sidebar.*/
+
+.sidebar {
+	background: #ffffff;
+	color: #4aaaa5;
+	border-color: #cccccc;
+    border-width: 1px;
+    border-style: solid;
+}
+#sidebarheader {
+	padding-bottom: 15px;
+	border-bottom-width: 1px;
+	border-bottom-color: #cccccc;
+	border-bottom-style: solid;
+	font-size: 18px;
+}
+
+#icongroup {
+	background-color: #ffffff;
+	color: #4aaaa5;
+	margin: 32px 0px 32px 31px;	
+	}
+.icon {
+	float: left;	
+	width: 40px;
+	height: 40px;
+}
+
+/*styling the footer*/
+#copyright { 
+	text-align: center;
+	padding-top: 25px;
+	font-size: 12px;
+	 }
+footer {
+    background-color: #666666;
+    color: #ffffff;
+    width: 100%;
+    position: absolute;
+    height: 66px;
+    border-top-width: 8px;
+    border-top-color: #4aaaa5;
+    border-top-style: solid;
+    bottom: -114px;
+}
+/*global styling*/
+
+@media screen and (min-width:981px) {
+    li {
+        padding: 5px;
+    }
+     .space {
+        margin-bottom: 126px;
+    }
+    .space2 {
+        margin-bottom: 160px;
+    }
+    .space3 {
+        margin-bottom: 176px;
+    }
+    /*styling header >981px*/
+    #top {
+        position: absolute;
+        top: 0px;
+       /* height: 91px;*/
+    }
+    #myname {
+        width: 253px;
+        height: 91px;   
+        margin-left: 155px; 
+        padding: 28px 18px 25px 18px;
+        position: absolute;
+    }
+    #navigation {
+        position: relative;
+        /*left: 811px;*/
+        left: 853px;
+        width: 399px;
+        height: 91px;
+        padding: 35px 40px 0px 0px;
+    }
+    .nav1 {
+    padding: 7px 20px 0px 20px;
+    }
+    .nav2 {
+    padding: 7px 20px 0px 20px;
+    }
+    /*styling for header of all pages >981px*/ 
+    #mainheader {
+        width:585px;
+        padding: 35px 0px 35px 0px;
+        margin-left: 32px;
+    }
+    /*styling for main area in index >981px*/
+    #center {
+        position: relative;
+        left: 155px;
+    }
+    #main {
+        width: 650px;
+        margin: 40px 40px 0px 0px;
+        position: relative;
+        top: 91px;
+    }
+    #profile {
+        width: 200px;
+        margin: 0px 40px 12px 0px;
+        float: left;
+    }
+    .profiletextbox {
+        padding: 50px;
+    }
+    
+    /*styling for main area of portfolio >981px*/
+    .portfoliomain {
+        position: relative;
+        top: 131px;
+        width: 650px;
+    }
+    .images {
+        margin-left: 51px;
+    }
+    .listtext {
+        position: relative;
+        bottom: 58px;
+        width: 240px;
+        height: 40px;
+        padding-top:12px;
+    }
+     /*styling for main area of contact page >981px*/
+    .contact {
+        position: relative;
+        top: 131px;
+        width: 650px;
+    }
+     /*styling for sidebar of portfolio >981px*/
+    .sidebar {
+        width: 267px;
+    }
+    #sidebar {
+        width: 264px;
+        height: 200px;
+        position: absolute;
+        top: 92px;
+        left: 701px;
+    }
+    #sidebar2 {
+        width: 264px;
+        height: 200px;
+        position: absolute;
+        bottom: 254px;
+        left: 701px;
+    }
+    #sidebar3 {
+        width: 264px;
+        height: 200px;
+        position: absolute;
+        top: 132px;
+        left: 701px;
+    }
+    #sidebarheader {
+        width: 200px;
+        margin:24px 24px 0px 32px;
+        text-align: center;     
+    }
+    .icon {
+        margin:5px;
+    }
+}
+@media screen and (max-width: 980px) {
+    /*global styling 980px*/
+    li {
+        padding: 5px;
+    }
+     .space {
+    margin-bottom: 126px;
+    }
+    .space2 {
+    margin-bottom: 158px;
+    }
+    .space3 {
+    margin-bottom: 165px;
+    }
+    /*styling for header 980px*/
+    #top {
+        position: absolute;
+        top: 0px;
+       /* height: 91px;*/
+    }
+    #myname {
+        width: 253px;
+        height: 91px;   
+        margin-left: 90px; 
+        padding: 28px 18px 25px 18px;
+        position: absolute;
+    }
+    #navigation {
+        position: relative;
+        left: 553px;
+        width:300px;
+        height: 91px;
+        padding: 31px 40px 0px 0px;
+    }
+    .nav1 {
+    padding: 7px 20px 0px 20px;
+    }
+    .nav2 {
+    /*padding: 7px 20px 0px 20px;*/
+    padding: 7px 15px 0px 20px;
+    }
+    /*styling for main area in all pages 980px*/
+    #mainheader {
+        width:360px;
+        padding: 35px 0px 35px 0px;
+        margin-left: 31px;
+        margin-bottom: 30px;
+    }
+    #center {
+        position: relative;
+        left: 155px;
+    }
+    /*styling for main area in index 980px*/
+    #profile {
+        width: 360px;
+        margin: 0px 30px 12px 0px;    
+    }
+    .profiletextbox {
+        padding: 0px 30px 30px 30px;
+
+    }
+    #main {
+        width: 420px;
+        margin: 40px 40px 0px -65px;
+        position: relative;
+        top: 91px;
+    }
+    /*styling for main area in portfolio 980px*/
+    .portfoliomain {
+        position: relative;
+        top: 131px;
+        width: 420px;
+        right: 65px;
+    }
+    .images {
+        width: 346px;
+        margin: 0px 30px 0px 34px; 
+    }
+    .listtext {
+        position: relative;
+        bottom: 88px;
+        width: 346px;
+        height: 56px;
+        padding-top:19px;
+        right: 17px;
+    }
+      /*styling for main area in contact 980px*/
+    .contact {
+        position: relative;
+        top: 131px;
+        width: 420px;
+        right: 65px;
+    }
+      /*styling for sidebar in all pages 980px*/
+    .sidebar {
+        left:387px;
+        width: 267px;
+    }
+    #sidebar {
+        height: 200px;
+        position: absolute;
+        top: 92px;
+    }
+    #sidebar2 {
+        height: 200px;
+        position: absolute;
+        bottom: 284px;
+    }
+    #sidebar3 {
+        height: 200px;
+        position: absolute;
+        top: 132px;
+    }
+    #sidebarheader {
+        width: 200px;
+        margin:24px 24px 0px 32px;
+        text-align: center; 
+    }
+     .icon {
+        margin:5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /*global styling for 768px*/
+    li {
+        padding: 5px 0px 5px 0px;
+    }
+    .space {
+        margin-bottom: 157px;
+    }
+    .space2 {
+        margin-bottom: 196px;
+    }
+    .space3 {
+        margin-bottom: 200px;
+    }
+     /*styling for header in all pages 768px*/
+    #top {
+        position: absolute;
+        top: 0px;
+    }
+    #myname {
+        width: 252px;
+       /* height: 91px;  */ 
+        margin-left: 20px; 
+        padding: 30px 18px 25px 18px;
+        position: absolute;
+    }
+    #navigation {
+        position: relative;
+        left: 473px;
+        width:300px;
+        height: 91px;
+        padding: 35px 40px 0px 0px;
+    }
+    .nav1 {
+    /*padding: 7px 20px 0px 20px;*/
+    padding: 7px 17px 0px 20px;
+    }
+    .nav2 {
+    padding: 7px 20px 0px 20px;
+    }
+     /*styling for main area in all pages 768px*/
+    #mainheader {
+        width:668px;
+        padding: 35px 0px 35px 0px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+    #center {
+        position: relative;
+        left: 155px;
+    }
+    /*styling for main area index 768px*/
+
+    #main {
+        width: 729px;
+        margin: 40px 40px 0px -136px;
+        position: relative;
+        top: 91px;
+    }
+    #profile {
+        width: 326px;
+        margin: 0px 40px 12px -21px;
+        float: left;
+    }
+    .profiletextbox {
+        padding: 5px 50px 50px 50px;
+    }
+    .textbox {
+        margin-left:-18px;
+        margin-right: -19px;
+    }
+    /*styling for main area in portfolio 768px*/
+    .portfoliomain {
+        position: relative;
+        top: 131px;
+        width: 729px;
+        right: 137px;
+    }
+    #portfolio-list li {
+        margin:-10px;
+    }
+    .images {
+        width: 314px;
+    }
+    .listtext {
+        position: relative;
+        bottom: 88px;
+        width: 314px;
+        height: 56px;
+        padding-top:19px;
+        right: 17px;
+    } 
+    
+    /*styling for main area in contact 768px*/
+    .contact {
+        position: relative;
+        top: 131px;
+        width: 729px;
+        right: 136px;
+    }
+    /*styling for sidebar in all pages 768px*/
+    .sidebar {
+        left:-136px;
+        width: 729px;
+    }
+    #sidebar {
+        height: 200px;
+        position: relative;
+        top: 125px;
+    }
+    #sidebar2 {
+        height: 200px;
+        position: relative;
+        bottom: -163px;
+    }
+    #sidebar3 {
+        height: 200px;
+        position: relative;
+        top: 165px;
+    }
+    #sidebarheader {
+        width: 668px;
+        margin:24px 24px 0px 32px;
+        text-align: left;
+    }  
+    .icon {
+        margin:11px;
+        position: relative;
+        top: -19px;
+        left:-11px;
+    }
+}
+@media screen and (max-width: 640px) {
+    /*global styling for 640px*/
+    header {position: static;
+    }
+    li {
+        padding: 5px 0px 5px 0px;
+    }
+     .space {
+        margin-bottom: 187px;
+    }
+    .space2 {
+        margin-bottom: 210px;
+    }
+    .space3 {
+        margin-bottom: 208px;
+    }
+    /*styling for header 640px*/
+    #top {
+        position: absolute;
+        top: 0px;
+    }
+    #myname {
+        padding: 28px 18px 25px 18px;
+        width: 100%;
+        height: 91px;   
+        margin: 0 auto; 
+        position: relative;
+    }
+    #navigation {
+        position: relative;
+        left: initial;
+        width: 100%;
+        padding: 10px 40px 0px 0px;
+        margin: 0 auto;
+        height: 37px;
+    }
+    .nav1 {
+    /*padding: 0px 73px 0px 73px;*/
+    padding: 0px 54px 0px 73px;
+
+    }
+    .nav2 {
+    /*padding: 0px 73px 0px 73px;*/
+    padding: 0px 33px 0px 44px;
+    }
+    #navlist {
+        margin: 0 auto;
+    }
+     /*styling for main section in all pages 640px*/ 
+    #center {
+        position: relative;
+        left: 155px;
+        top:10px;
+    }
+    #mainheader {
+        width: 543px;
+        padding: 35px 0px 35px 0px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+    /*styling for main section in index 640px*/
+    #main {
+        width: 600px;
+        margin: 40px 40px 0px -136px;
+        position: relative;
+        top: 104px;
+    }
+    #profile {
+        width: 540px;
+        margin: 0px 50px 12px 10px    
+    }
+    .profiletextbox {
+        padding: 16px;
+    }
+    .textbox {
+        margin-left: 11px;
+        margin-right: 17px;
+    }
+    /*styling for main section in portfolio 640px*/
+    .portfoliomain {
+        position: relative;
+        top: 143px;
+        width: 600px;
+        right: 137px;
+    }
+    .images {
+        width: 540px;
+        margin-right: 5px;
+    }
+    
+    .listtext {
+        position: relative;
+        bottom: 88px;
+        width: 540px;
+        height: 56px;
+        padding-top:19px;
+        right: 11px;
+    } 
+    /*styling for main section in contact 640px*/
+    .contact {
+        position: relative;
+        top: 143px;
+        width: 595px;
+        right: 136px;
+    }
+    /*styling for sidebar in all pages 640px*/
+    .sidebar {
+        left:-136px;
+        width: 595px;
+    }
+    #sidebar {
+        position: relative;
+        top: 140px;
+    }
+    #sidebar2 {
+        position: relative;
+        bottom: -173px;
+    }
+    #sidebar3 {
+        position: relative;
+        top: 171px;
+    }
+    #sidebarheader {
+        width: 543px;
+        margin:24px 24px 0px 32px;
+        text-align: left;
+    }
+}
