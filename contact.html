@@ -6,6 +6,11 @@
 	<title>Contact</title>
 	<link rel='stylesheet' type='text/css' href='assets/css/reset.css'>
 	<link rel='stylesheet' type='text/css' href='assets/css/style.css'>
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"></script>
+	  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
 </head>
 
 <body>
@@ -36,14 +41,14 @@
 		<section class="contact">
 				<h2 id="mainheader" class='georgia'>Contact</h2>
 				<div class="contactbox">
-				<form action="file:///C:/Users/tdcoc/code/Basic-Portfolio/contact.html#" method="post">
+				<form>
 					<p class="contacttext arial bold">Name</p>
-					<input type="text" name="name" placeholder=" John Smith">
+					<input type="text" name="name" id="nameInput" placeholder=" John Smith">
 					<p class="contacttext arial bold">Email</p>
-					<input type="text" name="email" placeholder=" email">
+					<input type="text" name="email" placeholder=" email" id='emailInput'>
 					<p class="contacttext arial bold">Message</p>
-					<textarea name="message"></textarea>
-					<input class="submitbutton arial" type="submit" value="Submit">
+					<textarea name="message" id='messageInput'></textarea>
+					<input class="submitbutton arial" type="submit" value="Submit" id='submit-button'>
 				</form>
 			</div>
 		</section>
@@ -67,5 +72,6 @@
 	<footer>
 		<div id=copyright><p class='arial'>© Copyright 2017 Taliesin Cochran</p></div>
 	</footer>
+	<script type = "text/javascript" src="assets/javascript/logic.js"></script>
 </body>
 </html>
