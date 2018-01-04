@@ -41,7 +41,7 @@
 		<section class="contact">
 				<h2 id="mainheader" class='georgia'>Contact</h2>
 				<div class="contactbox">
-				<form>
+				<form action='?' method='post'>
 					<p class="contacttext arial bold">Name</p>
 					<input type="text" name="name" id="nameInput" placeholder=" John Smith">
 					<p class="contacttext arial bold">Email</p>
@@ -49,6 +49,7 @@
 					<p class="contacttext arial bold">Message</p>
 					<textarea name="message" id='messageInput'></textarea>
 					<input class="submitbutton arial" type="submit" value="Submit" id='submit-button'>
+					<div class="g-recaptcha" data-sitekey="6LfQVj8UAAAAAPdTXzWXF8DQ0E4hNlVqScXNbC4i"></div>
 				</form>
 			</div>
 		</section>
@@ -73,5 +74,6 @@
 		<div id=copyright><p class='arial'>© Copyright 2017 Taliesin Cochran</p></div>
 	</footer>
 	<script type = "text/javascript" src="assets/javascript/logic.js"></script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 </body>
 </html>
