@@ -1,68 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel='stylesheet' type='text/css' href='assets/css/style.css'>
 	<title>About Me</title>
-	<meta charset='utf-8'>
-	<meta name='viewport' content='width=device-width, initial-scale=1'>
-	<link rel='stylesheet' type='text/css' href='assets/css/reset.css'>
-	<link rel='stylesheet' type='text/css' href='assets/css/style.css'>
-
 </head>
-
-<body>
-	<!--To make sure that there is space between main area and the footer-->
-	<div class='space'>
-		<!--Setup of the header of the webpage -->
-		<header id='top' class='clearfix'>
-			<h2 id='myname' class='georgia name'>Taliesin Cochran</h2>
-			<nav id='navigation'>
-				<ul id=navlist>
-					<li class= 'nav1'> 
-						<a href='index.html'><p class='arial'>About</p></a> 
-					</li>
-					<li class= 'nav2'> 
-						<a href='portfolio.html'><p class='arial'>Portfolio</p></a> 
-					</li>
-					<li class= 'nav2'> 
-						<a href='contact.html'><p class='arial'>Contact</p></a> 
-					</li>
-<!-- 					<li class= 'nav2'>
-						<a href='resume'><p class='arial'>Resume</p></a>
-					</li> -->
-				</ul>
-			</nav>
-		</header>
-		<!--setup of center part of webpage-->
-		<div id='center' class=".clearfix">
-			<section id='main'>
-				<h2 id= 'mainheader' class='georgia'>About Me</h2>
-				<div class='profiletextbox'> 
-					<img id='profile' src=assets/images/profile.jpg alt="Taliesin Cochran"> 
-					<div class='textbox'>
-						<p class='profiletext arial'>I'm a full stack developer and former chemist living in the RTP area.  I love coding,  I didn't think I would, but when I first started I found that I really enjoyed it when I had a challenge and I could build something from scratch to solve that challenge.  I love that there is so much to know that I can never run out of new things to learn.  I went to the Coding Boot Camp at UNC and learned how to be a full stack developer. I have experience with HTML, CSS, Git, Bootstrap, JavaScript, Node.js, Express.js, Handlebars.js, MySQL, Sequelize, and Firebase.</p>
-						<p class='profiletext arial'>When I'm not coding I can be found hiking, cycling, playing with my seven-year-old son, or curled up in my bed reading in my home in Carrboro, NC.</p>
-					</div>
-				</div>
-				</section>
-			<aside id= 'sidebar' class='sidebar'>
-				<h3 id='sidebarheader' class='georgia'>Connect with Me</h3>
-				<ul id= 'icongroup'>
-					<li>
-						<a class='icon' href='https://github.com/taliesincochran'><img src=assets/images/github.svg alt="github" width=60 height=60></a>
-					</li>
-					<li>
-						<a class='icon' href='https://www.linkedin.com/in/t-d-cochran-029a1011'><img src=assets/images/linkedin.svg alt='linkedin' width=60 height=60></a>
-					</li>
-					<li>
-						<a class='icon' href='https://stackoverflow.com/users/8229479/taliesin-cochran'><img src=assets/images/stackoverflow.svg alt='stackowerflow' width=60 height=60></a>
-					</li>
-				</ul>
-			</aside>	
+<body>	
+	<nav class='navbar navbar-default'>
+	<div class="container">
+		<div class='navbar-header'>
+			<span class='navbar-brand bg-teal' href='#'><p class='text-white'>Taliesin Cochran</p></span>
+		</div>
+		<div class='collapse.in navbar-collapse'>
+			<ul class='nav navbar-nav navbar-right marginCorrect'>
+				<li class='floatL'><a href='index.html'>About</a></li>
+				<li class='floatL'><a href='portfolio.html'>Portfolio</a></li>
+				<li class='floatL'><a href='contact.html'>Contact</a></li>
+			</ul>
 		</div>
 	</div>
-	<!--setup of the footer-->
-	<footer>
-		<div id=copyright><p class='arial'>© Copyright 2017 Taliesin Cochran</p></div>
-	</footer> 
+	</nav>
+	<div class='container' id='indexMain'>
+	<!--open row-->
+		<div class='row'>
+		<!--open column 1-->
+			<div class=' col-md-8 col-sm-12 bg-white main marginCorrect'>
+				<div class='page-header'>
+					<h1 class='text-info bg-white'>About Me</h1>
+				</div>
+			<!--open subrow-->
+				<div class='row'>
+				<!--open subcolumn 1-1 -->			
+					<div class='col-md-4 col-sm-12'>
+						<img src="assets/images/profile.jpg" alt='Taliesin Cochran' class='img-responsive'>
+				<!--close subcolumn 1-1 -->
+					</div>
+					<!--no column so that the text will wrap-->
+						<p class='text-muted textPaddingTop'>I'm a full stack developer and former chemist living in the RTP area.  I love coding,  I didn't think I would, but when I first started I found that I really enjoyed it when I had a challenge and I could build something from scratch to solve that challenge.  I love that there is so much to know that I can never run out of new things to learn.  I went to the Coding Boot Camp at UNC and learned how to be a full stack developer. I have experience with HTML, CSS, Git, Bootstrap, JavaScript, Node.js, Express.js, Handlebars.js, MySQL, Sequelize, and Firebase.</p>
+						<p class='text-muted textPaddingBottom'>When I'm not coding I can be found hiking, cycling, playing with my seven-year-old son, or curled up in my bed reading in my home in Carrboro, NC.</p>
+				<!-- close subcolumn 1-2 -->		
+					<!-- </div> -->
+			<!--close subrow-->
+				</div>
+		<!--close column 1-->
+			</div>
+		<!-- open column 2-->
+			<div class='col-md-4 col-sm-12'>
+				<div class='panel panel-info main marginCorrect stackfix'>
+					<div class='panel-heading'>
+						<h3 class='panel-title'>Connect with me</h3>
+					</div>
+					<div class='panel-body bg-white'>
+						<ul class='list-inline'>
+							<li>
+							<a href='https://github.com/taliesincochran'><img class='image-thumbnail' src=assets/images/github.svg alt="github" width=60 height=60></a>
+							</li>
+							<li>
+							<a href='https://www.linkedin.com/in/t-d-cochran-029a1011'><img class='image-thumbnail' src=assets/images/linkedin.svg alt='linkedin' width=60 height=60></a>
+							</li>
+							<li>
+							<a href='https://stackoverflow.com/users/8229479/taliesin-cochran'><img class='image-thumbnail' src=assets/images/stackoverflow.svg alt='stackowerflow' width=60 height=60></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+		<!--close column 2-->		
+			</div>
+	<!--close row-->
+		</div>
+<!--close container-->
+	</div>
+	<footer class="center-block navbar-fixed-bottom navbar-collapse footer footer-text">
+ 	   <p class="text-white text-center">© Copyright 2017 Taliesin Cochran</p>
+	</footer>
 </body>
 </html>
