@@ -1,84 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel='stylesheet' type='text/css' href='assets/css/style.css'>
 	<title>Portfolio</title>
-	<meta charset='utf-8'>
-	<meta name='viewport' content='width=device-width, initial-scale=1'>
-	<link rel='stylesheet' type='text/css' href='assets/css/reset.css'>
-	<link rel='stylesheet' type='text/css' href='assets/css/style.css'>
 </head>
-
 <body>
-	<!--To make sure that there is space between main area and the footer-->
-	<div class='space3'>
-		<!--Setup of the top line of the webpage -->
-		<header id='top' class='clearfix'>
-			<h2 id=myname class='georgia name'>Taliesin Cochran</h2>
-			<nav id='navigation'>
-				<ul id=navlist>
-					<li class= 'nav1'> 
-						<a href='index.html'><p class='arial'>About</p></a> 
-					</li>
-					<li class= 'nav2'> 
-						<a href='portfolio.html'><p class='arial'>Portfolio</p></a> 
-					</li>
-					<li class= 'nav2'> 
-						<a href='contact.html'><p class='arial'>Contact</p></a> 
-					</li>
-<!-- 					<li class= 'nav2'>
-						<a href='resume'><p class='arial'>Resume</p></a>
-					</li> -->
-				</ul>
-			</nav>
-		</header>
-		<!--setup of center part of webpage-->
-		<div id='center' class="clearfix">
-			<section class="portfoliomain">
-				<h2 id="mainheader" class="georgia">Portfolio</h2>
-				<ul id="portfolio-list">
-					<li>
-						<a href="https://taliesincochran.github.io/Hangman-Game/"> <img src="assets/images/image1.jpg" class='images' alt="Hangman" width=240> </a>
-						<h2 class='listtext georgia'>Hangman</h2>
-					</li>
-					<li>
-						<a href="https://taliesincochran.github.io/week-4-game/"> <img src="assets/images/image2.jpg" class='images' alt='RPG Game' width=240> </a>
-						<h2 class='listtext georgia'>RPG Game</h2>
-					</li>
-					<li>
-						<a href="https://taliesincochran.github.io/trivia-game/"> <img src="assets/images/image3.jpg" class='images' alt='Trivia Game' width=240> </a>
-						<h2 class='listtext georgia'>Trivia Game</h2>
-					</li>
-					<li>
-						<a href="https://still-temple-48407.herokuapp.com/index"> <img src="assets/images/Burger.png" class='images' alt='Burger App' width=240> </a>
-						<h2 class='listtext georgia'>Burger App</h2>
-					</li>
-					<li>
-						<a href="https://taliesincochran.github.io/RockPaperScissors/"> <img src="assets/images/image5.jpg" class='images' alt='Rock Paper Scissors' width=240> </a>
-						<h2 class='listtext georgia'>Rock Paper Scissors</h2>
-					</li>
-				</ul>
-			</section>
-			<aside id= 'sidebar3' class='sidebar'>
-				<h3 id='sidebarheader' class='georgia'>Connect with Me</h3>
-				<ul id= 'icongroup'>
-					<li>
-						<a class='icon' href=https://github.com/taliesincochran><img src=assets/images/github.svg alt="github" width=60 height=60></a>
-					</li>
-					<li>
-						<a class='icon' href=https://www.linkedin.com/in/t-d-cochran-029a1011><img src=assets/images/linkedin.svg alt='linkedin' width=60 height=60></a>
-					</li>
-					<li>
-						<a class='icon' href=https://stackoverflow.com/users/8229479/taliesin-cochran><img src=assets/images/stackoverflow.svg alt='stackoverflow' width=60 height=60></a>
-					</li>
-				</ul>
-			</aside>	
+
+	<nav class='navbar navbar-default'>
+	<div class="container">
+		<div class='navbar-header'>
+			<a class='navbar-brand bg-teal' href=><p class='text-white'>Taliesin Cochran</p></a>
+		</div>
+		<div class='collapse.in navbar-collapse'>
+			<ul class='nav navbar-nav navbar-right marginCorrect'>
+				<li class='floatL'><a href='index.html'>About</a></li>
+				<li class='floatL'><a href='portfolio.html'>Portfolio</a></li>
+				<li class='floatL'><a href='contact.html'>Contact</a></li>
+			</ul>
 		</div>
 	</div>
-<!--setup of the footer-->
-	<footer>
-		<div id=copyright><p class='arial'>© Copyright 2017 Taliesin Cochran</p></div>
+	</nav>
+	<div class='container'>
+	<!--open row-->
+		<div class='row'>
+		<!--open column 1-->
+			<div class='col-md-8 col-sm-12 main bg-white marginCorrect'>
+				<div class='page-header'>
+					<h1 class='text-info'>Portfolio</h1>
+				</div>
+			<!--open subrow-->
+				<div class='row'>							
+					<div class='col-md-6  col-sm-12'>
+						<a href="#"> <img src="assets/images/image1.jpg" class='img-responsive' alt="Hangman"> </a>
+						<h2 class='listTextPosition text-center'>Hangman</h2>									
+					</div>
+					<div class='col-md-6  col-sm-12'>
+						<a href="#"> <img src="assets/images/image2.jpg" class='img-responsive' alt='RPG Game'> </a>
+						<h2 class='listTextPosition text-center'>RPG Game</h2>
+					</div>
+				</div>
+			<!--open subrow-->	
+				<div class='row'>
+					<div class='col-md-6  col-sm-12'>
+							<a href="#"> <img src="assets/images/image3.jpg" class='img-responsive' alt='Trivia Game'> </a>
+							<h2 class='listTextPosition text-center'>Trivia Game</h2>
+					</div>
+					<div class='col-md-6  col-sm-12'>
+							<a href="#"> <img src="assets/images/Burger.png" class='img-responsive' alt='Burger'> </a>
+							<h2 class='listTextPosition text-center'>Bob's Burgers</h2>
+					</div>	
+			<!--close subrow-->
+				</div>
+			<!--open subrow-->	
+				<div class='row'>
+					<div class='col-md-6  col-sm-12'>
+							<a href="#"> <img src="assets/images/image5.jpg" class='img-responsive' alt='Rock Paper Scissors'> </a>
+							<h2 class='listTextPosition text-center'>Rock Paper Scissors</h2>
+					</div>
+			<!--close subrow-->
+				</div>		
+		<!--close column 1-->	
+			</div>
+		<!-- open column 2-->
+			<div class='col-md-4 col-sm-12 main marginCorrect'>
+				<div class='panel panel-info stackfix2'>
+					<div class='panel-heading'>
+						<h2 class='panel-title'>Connect with me</h2>
+					</div>
+					<div class='panel-body bg-white'>
+						<ul class='list-inline'>
+							<li>
+							<a href='https://github.com/taliesincochran'><img class='image-thumbnail' src=assets/images/github.svg alt="github" width=60 height=60></a>
+							</li>
+							<li>
+							<a href='https://www.linkedin.com/in/t-d-cochran-029a1011'><img class='image-thumbnail' src=assets/images/linkedin.svg alt='linkedin' width=60 height=60></a>
+							</li>
+							<li>
+							<a href='https://stackoverflow.com/users/8229479/taliesin-cochran'><img class='image-thumbnail' src=assets/images/stackoverflow.svg alt='stackowerflow' width=60 height=60></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+		<!--close column 2-->		
+			</div>
+	<!--close row-->
+		</div>
+<!--close container-->
+	</div>
+	<footer class="center-block navbar-fixed-bottom navbar-collapse footer footer-text">
+        <p class="text-white text-center">© Copyright 2017 Taliesin Cochran</p>
 	</footer>
-	
-	
 </body>
 </html>

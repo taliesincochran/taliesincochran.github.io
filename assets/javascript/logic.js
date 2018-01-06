@@ -11,14 +11,15 @@ $(document).ready(function() {
   firebase.initializeApp(config);
   var database = firebase.database();
   $('#submit-button').on('click', function() {
-    var name = $('#nameInput').val().trim();
-    var email = $('#emailInput').val().trim();
-    var message = $('#messageInput').val().trim();
+    var name = $('#name').val().trim();
+    var email = $('#email').val().trim();
+    var message = $('#message').val().trim();
     var firebaseObj = {
       name: name,
       email: email,
       message: message
     };
+    console.log("object", firebaseObj);
     if(name.length > 0 && email.length > 0 && message.length > 0) {
       var messageSent = database.ref('messages');
       return messageSent.push(firebaseObj).then(function(config) {
