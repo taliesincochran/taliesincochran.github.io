@@ -215,12 +215,12 @@ footer {
     background-color: #666666;
     color: #ffffff;
     width: 100%;
-    position: absolute;
+    position: relative;
     height: 66px;
     border-top-width: 8px;
     border-top-color: #4aaaa5;
     border-top-style: solid;
-    bottom: -114px;
+    bottom: 0px;
 }
 /*global styling*/
 
