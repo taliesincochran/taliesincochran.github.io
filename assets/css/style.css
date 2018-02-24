@@ -31,6 +31,11 @@ p {
    display: block;
    clear: both;
 }
+.link {
+    font-size: 2em;
+    position: relative;
+    left: 20px;
+}
 .arial {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
@@ -68,15 +73,9 @@ p {
 	z-index: 200;
 
 }
-.nav1 {
+.nav {
     background-color: #ffffff;
 	float:left;
-	font-size: 14px;
-}
-.nav2 {
-    background-color: #ffffff;
-	border-left: 1px solid #cccccc;
-	float:left;	
 	font-size: 14px;
 }
 #navlist {
@@ -204,13 +203,12 @@ textarea {
 	width: 40px;
 	height: 40px;
 }
-
 /*styling the footer*/
 #copyright { 
-	text-align: center;
-	padding-top: 25px;
-	font-size: 12px;
-	 }
+    text-align: center;
+    padding-top: 25px;
+    font-size: 12px;
+     }
 footer {
     background-color: #666666;
     color: #ffffff;
@@ -225,6 +223,15 @@ footer {
 /*global styling*/
 
 @media screen and (min-width:981px) {
+    .link {
+        position: relative;
+        bottom: 10px;
+        left: 64px;
+    }
+    #email-image {
+        position: relative;
+        left: 46px;
+    }
     li {
         padding: 5px;
     }
@@ -258,10 +265,7 @@ footer {
         height: 91px;
         padding: 35px 40px 0px 0px;
     }
-    .nav1 {
-    padding: 7px 20px 0px 20px;
-    }
-    .nav2 {
+    .nav {
     padding: 7px 20px 0px 20px;
     }
     /*styling for header of all pages >981px*/ 
@@ -348,6 +352,15 @@ footer {
 }
 @media screen and (max-width: 980px) {
     /*global styling 980px*/
+    .link {
+        position: relative;
+        bottom: 10px;
+        left: 64px;
+    }
+    #email-image {
+        position: relative;
+        left: 46px;
+    }
     li {
         padding: 5px;
     }
@@ -380,12 +393,8 @@ footer {
         height: 91px;
         padding: 31px 40px 0px 0px;
     }
-    .nav1 {
+    .nav {
     padding: 7px 20px 0px 20px;
-    }
-    .nav2 {
-    /*padding: 7px 20px 0px 20px;*/
-    padding: 7px 15px 0px 20px;
     }
     /*styling for main area in all pages 980px*/
     #mainheader {
@@ -471,6 +480,15 @@ footer {
 
 @media screen and (max-width: 768px) {
     /*global styling for 768px*/
+    .link {
+        position: relative;
+        bottom: 10px;
+        left: 64px;
+    }
+    #email-image {
+        position: relative;
+        left: -9px;
+    }
     li {
         padding: 5px 0px 5px 0px;
     }
@@ -502,12 +520,8 @@ footer {
         height: 91px;
         padding: 35px 40px 0px 0px;
     }
-    .nav1 {
-    /*padding: 7px 20px 0px 20px;*/
+    .nav {
     padding: 7px 17px 0px 20px;
-    }
-    .nav2 {
-    padding: 7px 20px 0px 20px;
     }
      /*styling for main area in all pages 768px*/
     #mainheader {
@@ -603,6 +617,18 @@ footer {
 }
 @media screen and (max-width: 640px) {
     /*global styling for 640px*/
+    .link {
+        position: relative;
+        bottom: 5px;
+        left: 185px
+    }
+    #profile {
+        width: 235px;
+    }
+    #email-image {
+        position: relative;
+        left: 32px;
+    }
     header {position: static;
     }
     li {
@@ -637,14 +663,9 @@ footer {
         margin: 0 auto;
         height: 37px;
     }
-    .nav1 {
-    /*padding: 0px 73px 0px 73px;*/
+    .nav {
     padding: 0px 54px 0px 73px;
 
-    }
-    .nav2 {
-    /*padding: 0px 73px 0px 73px;*/
-    padding: 0px 33px 0px 44px;
     }
     #navlist {
         margin: 0 auto;
