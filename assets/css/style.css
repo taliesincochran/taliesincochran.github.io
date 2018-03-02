@@ -4,6 +4,15 @@
 *{
 	box-sizing: border-box;
 }
+.listText {
+    width: 226px;
+    word-wrap: normal;
+    position: relative;
+    left: 59px;
+}
+strong {
+    font-weight: bolder;
+}
 body {
 	background-image: url("../images/background.png");
 	margin: 0 auto;
